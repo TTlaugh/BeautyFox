@@ -12,11 +12,11 @@
   <body>
     <div id="search">
       <input
-        id="search-field"
-        type="text"
-        name="search-field"
-        onkeypress="return search(event)"
-      />
+          id="search-field"
+          type="text"
+          name="search-field"
+          onkeypress="return search(event)"
+          />
     </div>
     <div class="container">
       <div id="clock"></div>
@@ -37,7 +37,7 @@
       function search(e) {
         if (e.keyCode == 13) {
           var val = document.getElementById("search-field").value;
-          window.open(searchUrl + val);
+          window.open(searchUrl + val, "_self");
         }
       }
       // Get current time and format
@@ -90,7 +90,7 @@
             html.push(
               ...b.links.map(
                 (l) =>
-                  `<a class="bookmark" href="${l.url}" target="_blank">${l.name}</a>`
+                `<a class="bookmark" href="${l.url}" target="_self">${l.name}</a>`
               )
             );
             html.push("</div></div>");
