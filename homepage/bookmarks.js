@@ -10,11 +10,12 @@ const bookmarks = [
     ],
   },
   {
-    title: "AI",
+    title: "Explore",
     links: [
+      { name: "LandChad"            , url: "https://landchad.net" },
+      { name: "Wallhaven"           , url: "https://wallhaven.cc" },
       { name: "ChatGPT"             , url: "https://chatgpt.com" },
       { name: "Gemini"              , url: "https://gemini.google.com" },
-      { name: "BingChat"            , url: "https://www.bing.com/chat", },
     ],
   },
   {
